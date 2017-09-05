@@ -1,5 +1,8 @@
 # Dotify Jquery Plugin
-Shorten your text using this simple plugin. Dotify wraps parts of your text with two css classes which you can use to stylize to your liking. In our case, the goal is to shorten text and place a "...". So the script inserts two spans in your content with css classes 'dotify-dots' and .dotify-extra-content. You can stylize your content with these hooks however you want. Since we want to hide the 'extra content', we just do a display:none. Simple :)
+Shorten your text using this simple plugin. Dotify wraps parts of your text with two css classes which you can use to stylize to your liking. In our case, the goal is to shorten text and place a "...". So the script inserts two spans in your content with css classes .dotify-dots and .dotify-extra-content. You can stylize your content with these hooks however you want. Since we want to hide the 'extra content', we just do a display:none. Simple :)
+
+## Sample Codepen demo
+https://codepen.io/hdavtian/pen/dOevqW
 
 ###### The markup
 ```html
