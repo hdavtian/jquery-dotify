@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery Plugin - Dotify</title>
+
+    <link rel="stylesheet" href="dotify.css">
+
+</head>
+<body>
+
+<h1>Jquery Dotify Plugin</h1>
+
+<p>Shorten your text using this simple plugin. Dotify wraps parts of your text with two css classes which you can use to stylize to your liking. In our case, the goal is to shorten text and place a "...". So in the css, we do a display:none to hide the extra content, and give you a css class to stylize the "..." to your liking. We are not removing the extra text.</p>
+
+<pre>
+    <code>
+        $('.your-class').dotify(
+            {
+                max: 25,
+                dotCharacters: '...'
+            }
+        );
+    </code>
+</pre>
+<code></code>
+
+<h2>Examples</h2>
+
+<h4>Long paragraph</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+<h4>Shortened paragraph</h4>
+<p class="my-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+
+<h4>Long headline</h4>
+<h1>Useful to shorten long headlines bla bla bla bla bla bla bla bla bla</h1>
+
+<h4>Shortened headline</h4>
+<h1 class="my-headline">Useful to shorten long headlines bla bla bla bla bla bla bla bla bla</h1>
+
+<h4>Long link title</h4>
+<a href="#">Useful to shorten long link titles bla bla bla bla bla bla bla bla bla</a>
+
+<h4>Short link title</h4>
+<a href="#" class="my-link">Useful to shorten long link titles bla bla bla bla bla bla bla bla bla</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="jquery.dotify-1.0.0.js"></script>
+
+<script>
+    $('.my-paragraph').dotify({max: 15, dotCharacters: '...'});
+    $('.my-headline').dotify({max: 35, dotCharacters: '...'});
+    $('.my-link').dotify({max: 45, dotCharacters: '...'});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+/*
+Stylize your dots with this class
+*/
+.dotify-dots {
+
+}
+
+/*
+Use .dotify-extra-content to do what you'd like with the extra content
+We recommend just hiding it
+*/
+
+.dotify-extra-content {
+    display: none;
+}
